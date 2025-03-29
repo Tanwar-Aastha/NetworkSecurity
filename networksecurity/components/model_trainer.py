@@ -27,10 +27,11 @@ import mlflow
 from urllib.parse import urlparse
 
 import dagshub
-#dagshub.init(repo_owner='krishnaik06', repo_name='networksecurity', mlflow=True)
+#dagshub.init(repo_owner='Tanwar-Aastha', repo_name='NetworkSecurity', mlflow=True)
 
-os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/krishnaik06/networksecurity.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"]="krishnaik06"
+
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/Tanwar-Aastha/NetworkSecurity.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="Tanwar-Aastha"
 os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece21e0e2adb4e36a250ae3251f"
 
 
@@ -152,13 +153,7 @@ class ModelTrainer:
         return model_trainer_artifact
 
 
-        
-
-
-       
-    
-    
-        
+              
     def initiate_model_trainer(self)->ModelTrainerArtifact:
         try:
             train_file_path = self.data_transformation_artifact.transformed_train_file_path
